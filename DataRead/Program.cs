@@ -1,3 +1,2 @@
-﻿// See https://aka.ms/new-console-template for more information
+﻿using Microsoft.Data.Analysis;  
 
-Console.WriteLine("Hello, World!");
