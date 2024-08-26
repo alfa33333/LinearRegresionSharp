@@ -11,17 +11,15 @@ Console.WriteLine(dataFrame);
 using var reader = new StreamReader(dataPath);
 using var csv = new CsvReader(reader, CultureInfo.InvariantCulture);
 {
-    var records = csv.GetRecords<Foo>();
+    csv.Read();
+    csv.ReadHeader();
+    string[]? headers = csv.HeaderRecord;
+    
+    Console.WriteLine(headers?[0] + " columns");
+    
+    var records = csv.GetRecords<dynamic>();
     foreach (var record in records)
     {
-        Console.WriteLine(record.X);
+        Console.WriteLine(record);
     }
-}
-
-
-
-public class Foo
-{
-    public int X { get; set; }
-    public int Y { get; set; }
 }
