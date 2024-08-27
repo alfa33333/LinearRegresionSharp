@@ -1,4 +1,5 @@
 ﻿using System.Globalization;
+using System.Reflection;
 using Microsoft.Data.Analysis;
 using CsvHelper;
 
@@ -10,16 +11,27 @@ Console.WriteLine(dataFrame);
 
 using var reader = new StreamReader(dataPath);
 using var csv = new CsvReader(reader, CultureInfo.InvariantCulture);
+csv.Read();
+csv.ReadHeader();
+string[]? headers = csv.HeaderRecord;
+
+Console.WriteLine(headers?[0] + " columns");
+
+var records = csv.GetRecords<dynamic>();
+foreach (object record in records)
 {
-    csv.Read();
-    csv.ReadHeader();
-    string[]? headers = csv.HeaderRecord;
-    
-    Console.WriteLine(headers?[0] + " columns");
-    
-    var records = csv.GetRecords<dynamic>();
-    foreach (var record in records)
+    var temp = (IDictionary<string, object>)record;
+    Console.WriteLine(Int32.Parse(temp["Y"].ToString()));
+}
+
+reader.BaseStream.Seek(0, SeekOrigin.Begin);
+using var csv2 = new CsvReader(reader, CultureInfo.InvariantCulture);
+csv2.Read();
+csv2.ReadHeader();
+while (csv2.Read())
+{
+    foreach (var header in headers)
     {
-        Console.WriteLine(record);
+        Console.WriteLine($"{header}: {csv2.GetField(header)}");
     }
 }
