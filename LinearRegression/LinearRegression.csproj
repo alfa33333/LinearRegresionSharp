@@ -7,4 +7,13 @@
         <Nullable>enable</Nullable>
     </PropertyGroup>
 
+    <ItemGroup>
+      <PackageReference Include="CsvHelper" Version="33.0.1" />
+      <PackageReference Include="Microsoft.Data.Analysis" Version="0.21.1" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\DataRead\DataRead.csproj" />
+    </ItemGroup>
+
 </Project>
