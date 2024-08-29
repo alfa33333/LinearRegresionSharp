@@ -35,3 +35,31 @@ while (csv2.Read())
         Console.WriteLine($"{header}: {csv2.GetField(header)}");
     }
 }
+
+public class DataPack
+{
+    public List<float> X { get; set; } = [];
+    public List<float> Y { get; set; } = [];
+
+    public void DataReader(string dataPath)
+    {
+        using var reader = new StreamReader(dataPath);
+        using var csv = new CsvReader(reader, CultureInfo.InvariantCulture);
+        csv.Read();
+        csv.ReadHeader();
+        string[]? headers = csv.HeaderRecord;
+        ArgumentNullException.ThrowIfNull(headers);
+        while (csv.Read())
+        {
+            foreach (var header in headers)
+            {
+                if (header == "Y")
+                    Y.Add(csv.GetField<float>(header));
+                else
+                    X.Add(csv.GetField<float>(header));
+            }
+        }
+    }
+
+
+}
