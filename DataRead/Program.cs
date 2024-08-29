@@ -9,32 +9,12 @@ var dataFrame = DataFrame.LoadCsv(dataPath);
 
 Console.WriteLine(dataFrame);
 
-using var reader = new StreamReader(dataPath);
-using var csv = new CsvReader(reader, CultureInfo.InvariantCulture);
-csv.Read();
-csv.ReadHeader();
-string[]? headers = csv.HeaderRecord;
+DataPack dataPack = new DataPack();
 
-Console.WriteLine(headers?[0] + " columns");
+dataPack.DataReader(dataPath);
 
-var records = csv.GetRecords<dynamic>();
-foreach (object record in records)
-{
-    var temp = (IDictionary<string, object>)record;
-    Console.WriteLine(Int32.Parse(temp["Y"].ToString()));
-}
-
-reader.BaseStream.Seek(0, SeekOrigin.Begin);
-using var csv2 = new CsvReader(reader, CultureInfo.InvariantCulture);
-csv2.Read();
-csv2.ReadHeader();
-while (csv2.Read())
-{
-    foreach (var header in headers)
-    {
-        Console.WriteLine($"{header}: {csv2.GetField(header)}");
-    }
-}
+dataPack.X.ForEach(Console.WriteLine);
+dataPack.Y.ForEach(Console.WriteLine);
 
 public class DataPack
 {
