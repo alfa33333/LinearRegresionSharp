@@ -20,3 +20,15 @@ for (int i = 0; i < exampleData.X.Count; i++)
 {
     Console.WriteLine($"{exampleData.X[i]}  {exampleData.Y[i]}");
 }
+
+
+// Create a new LinearModel object
+
+LinearModel model = new LinearModel();
+
+// Load the data into the model
+
+model.loadData(exampleData.X.ToArray(), exampleData.Y.ToArray());
+
+// Print the predictors and responses
+model.Fit();
