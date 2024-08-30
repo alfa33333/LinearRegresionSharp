@@ -3,7 +3,7 @@ using DataRead;
 
 const string dataPath = @"../../../../Data/example.csv";
 
-DataPack exampleData = new DataPack();
+DataPack exampleData = new();
 
 exampleData.DataReader(dataPath);
 
@@ -24,13 +24,13 @@ for (int i = 0; i < exampleData.X.Count; i++)
 
 // Create a new LinearModel object
 
-LinearModel model = new LinearModel();
+LinearModel model = new();
 
 // Load the data into the model
 
-model.loadData(exampleData.X.ToArray(), exampleData.Y.ToArray());
+model.LoadData([.. exampleData.X], [.. exampleData.Y]);
 
 // Print the predictors and responses
 model.Fit();
 
-Console.WriteLine($"Coefficients: [{string.Join(", ",model.Coefficients.ToArray())}]");
+Console.WriteLine($"Coefficients: [{string.Join(", ", model.Coefficients)}]");
