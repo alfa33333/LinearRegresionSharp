@@ -1,8 +1,7 @@
+using MathNet.Numerics;
 using MathNet.Numerics.LinearAlgebra;
 
 namespace LinearRegression;
-
-
 
 public class LinearModel
 {
@@ -25,7 +24,10 @@ public class LinearModel
 
     public void Fit()
     {
-        var result = Predictors.TransposeThisAndMultiply(Predictors).Cholesky().Solve(Predictors.TransposeThisAndMultiply(Response));
+        var designMatrix = Matrix<float>.Build.Dense(Predictors.RowCount, 1 + Predictors.ColumnCount);
+        designMatrix.SetSubMatrix(0, 1, Predictors);
+        designMatrix.SetColumn(0, Generate.Repeat(Predictors.RowCount, 1.0f));
+        Coefficients = designMatrix.TransposeThisAndMultiply(designMatrix).Cholesky().Solve(designMatrix.TransposeThisAndMultiply(Response));
     }
 
 

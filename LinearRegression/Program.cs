@@ -32,3 +32,5 @@ model.loadData(exampleData.X.ToArray(), exampleData.Y.ToArray());
 
 // Print the predictors and responses
 model.Fit();
+
+Console.WriteLine($"Coefficients: [{string.Join(", ",model.Coefficients.ToArray())}]");
