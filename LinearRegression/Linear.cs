@@ -1,5 +1,6 @@
 using MathNet.Numerics;
 using MathNet.Numerics.LinearAlgebra;
+using Microsoft.Data.Analysis;  
 
 namespace LinearRegression;
 
@@ -23,6 +24,7 @@ public class LinearModel
         Predictors = Matrix<float>.Build.DenseOfArray(predictorsInput);
         Response = Vector<float>.Build.Dense(responseInput);
     }
+
 
     public void Fit()
     {
