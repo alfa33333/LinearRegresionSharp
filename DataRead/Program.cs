@@ -4,14 +4,24 @@ using Microsoft.Data.Analysis;
 using CsvHelper;
 using DataRead;
 
-const string dataPath = @"C:\Users\alfa33333\Documents\GitHub\LinearRegresionSharp\Data\example.csv";
+const string dataPath = @"../../../../Data/example.csv";
 
 var dataFrame = DataFrame.LoadCsv(dataPath);
 
 Console.WriteLine(dataFrame);
 
+
 DataPack dataPack = new DataPack();
 
+
+/// Reading from DataFrame
+
+dataPack.DataReader(dataFrame);
+
+dataPack.X.ForEach(Console.WriteLine);
+dataPack.Y.ForEach(Console.WriteLine);
+
+/// Reading directly from CSV file
 dataPack.DataReader(dataPath);
 
 dataPack.X.ForEach(Console.WriteLine);
@@ -40,6 +50,27 @@ namespace DataRead
                         Y.Add(csv.GetField<float>(header));
                     else
                         X.Add(csv.GetField<float>(header));
+                }
+            }
+        }
+
+        public void DataReader(DataFrame dataFrame)
+        { 
+            foreach(var column in dataFrame.Columns)
+            {
+                if (column.Name == "Y")
+                {
+                    foreach (float item in column)
+                    {
+                        Y.Add(item);
+                    }
+                }
+                else
+                {
+                    foreach (float item in column)
+                    {
+                        X.Add(item);
+                    }
                 }
             }
         }

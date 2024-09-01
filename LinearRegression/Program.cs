@@ -3,6 +3,11 @@ using DataRead;
 
 const string dataPath = @"../../../../Data/example.csv";
 
+var dataFrame = DataFrame.LoadCsv(dataPath);
+
+
+
+// Create a new DataPack object
 DataPack exampleData = new();
 
 exampleData.DataReader(dataPath);
@@ -28,7 +33,9 @@ LinearModel model = new();
 
 // Load the data into the model
 
-model.LoadData([.. exampleData.X], [.. exampleData.Y]);
+model.LoadData(dataFrame, "Y");
+
+//model.LoadData([.. exampleData.X], [.. exampleData.Y]);
 
 // Print the predictors and responses
 model.Fit();
