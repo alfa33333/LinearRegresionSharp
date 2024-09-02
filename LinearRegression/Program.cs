@@ -40,4 +40,6 @@ model.LoadData(dataFrame, "Y");
 // Print the predictors and responses
 model.Fit();
 
+model.Predict([1, 2]);
+
 Console.WriteLine($"Coefficients: [{string.Join(", ", model.Coefficients)}]");

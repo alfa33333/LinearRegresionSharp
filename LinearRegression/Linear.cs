@@ -44,10 +44,21 @@ public class LinearModel
     }
 
 
-    public float Predict(float[] x)
+    public float[] Predict(float[] x, bool intercept = false)
     {
-        return _Coefficients.DotProduct(Vector<float>.Build.DenseOfArray(x)) + Intercept;
+        if (intercept)
+        {
+            var designMatrix = Matrix<float>.Build.Dense(x.Length, Predictors.ColumnCount);
+            designMatrix.SetSubMatrix(0, 0, Matrix<float>.Build.DenseOfColumnArrays(x));
+            return designMatrix.TransposeThisAndMultiply(_Coefficients).ToArray();
+        }
+        else
+        {
+            var designMatrix = Matrix<float>.Build.Dense(x.Length, 1 + Predictors.ColumnCount);
+            designMatrix.SetSubMatrix(0, 1, Matrix<float>.Build.DenseOfColumnArrays(x));
+            designMatrix.SetColumn(0, Generate.Repeat(x.Length, 1.0f));
+            var result = designMatrix.TransposeThisAndMultiply(_Coefficients).ToArray();
+            return designMatrix.TransposeThisAndMultiply(_Coefficients).ToArray();
+        }
     }
-
-
 }
