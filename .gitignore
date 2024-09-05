@@ -38,3 +38,6 @@
 /.vs
 /LinearRegression/obj/Debug/net8.0/LinearRegression.GeneratedMSBuildEditorConfig.editorconfig
 /RegressionApp/bin/Debug/net8.0
+/DataRead/obj/Release/net8.0
+/LinearRegression/obj/Release/net8.0
+/RegressionApp/obj/Release/net8.0
