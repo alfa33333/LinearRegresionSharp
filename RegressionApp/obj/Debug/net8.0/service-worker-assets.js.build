@@ -5,7 +5,7 @@
       "url": "css\/app.css"
     },
     {
-      "hash": "sha256-z8OR40MowJ8GgK6P89Y+hiJK5+cclzFHzLhFQLL92bg=",
+      "hash": "sha256-SiIVMGgRhdXjKSTIddX7mh9IbOXVcwQWc7\/p4nS6D\/0=",
       "url": "css\/bootstrap\/bootstrap.min.css"
     },
     {
@@ -25,7 +25,7 @@
       "url": "icon-512.png"
     },
     {
-      "hash": "sha256-pKQls83h5UMmBtjjMhOVzTUaDwx2zy9S\/U6YigAez6w=",
+      "hash": "sha256-awWqmLrspTBy3a0aT43bFjC9camUm9k4\/YDJQTC1Lsw=",
       "url": "index.html"
     },
     {
@@ -37,12 +37,16 @@
       "url": "sample-data\/weather.json"
     },
     {
-      "hash": "sha256-S36PoTKtHnQZGZ8MM5RzY8vxCPLIyXN9bZ4rFeozSYI=",
+      "hash": "sha256-gvHfnndfEu1tRf0rFb5988rWq7ITIotOaE8+AMbKYbc=",
+      "url": "_framework\/blazor.webassembly.js"
+    },
+    {
+      "hash": "sha256-\/ek7z0XcWg8FFIJLIyuYkWAsMWl1IPUX0STOe9Tc5KA=",
       "url": "RegressionApp.styles.css"
     },
     {
-      "hash": "sha256-gvHfnndfEu1tRf0rFb5988rWq7ITIotOaE8+AMbKYbc=",
-      "url": "_framework\/blazor.webassembly.js"
+      "hash": "sha256-+jeQHjqZsB2T7+hDAnW2nNVPF+WG1FXmZK6+DEt+gbA=",
+      "url": "_framework\/BlazorBootstrap.wasm"
     },
     {
       "hash": "sha256-H1yH7iBNYt\/rilvQT6qsv2frcFFOBUKBnRrGQ1AIHnI=",
@@ -818,7 +822,7 @@
     },
     {
       "hash": "sha256-juC5sA7gHTLXFEhAKgdM2\/RavswpwCtDfjYGsAz2FXg=",
-      "url": "_framework\/dotnet.native.8.0.8.51ek95j1zz.js"
+      "url": "_framework\/dotnet.native.8.0.8.7yf22kfjty.js"
     },
     {
       "hash": "sha256-OcUTcd7qQceenWEF93409WZcaXp2qQbEyhdchog4RUE=",
@@ -826,7 +830,7 @@
     },
     {
       "hash": "sha256-0Dpj\/NkVD5WqSC16ZvJLmlc38iv9+Je+umYBVOycPVU=",
-      "url": "_framework\/dotnet.runtime.8.0.8.z6xsxzafbj.js"
+      "url": "_framework\/dotnet.runtime.8.0.8.c3mjv80gmj.js"
     },
     {
       "hash": "sha256-3hEn0jZvWmxCOJ4aSbwsZwIf9EfBnfZfTsxh7\/j3n0E=",
@@ -845,17 +849,49 @@
       "url": "_framework\/icudt_no_CJK.dat"
     },
     {
-      "hash": "sha256-vZK2EHH9itJh3fheVyBqO9ZN9RgcYsY3xbRweX\/ZS1E=",
+      "hash": "sha256-xxCXm+\/gfwAPfNzDUwxbYFx1VxUmNiTBCAenZOlWchM=",
       "url": "_framework\/RegressionApp.wasm"
     },
     {
-      "hash": "sha256-hzImo8ZBW6s4SDTmDS7rx+w4p0YWCVCozDw+dAd\/knE=",
+      "hash": "sha256-s7t7CHh+LcffG007uOB8Kl1bsIuLQnOSV5TMTqhloEw=",
       "url": "_framework\/RegressionApp.pdb"
     },
     {
-      "hash": "sha256-GWyMiixhQwCq+LgyFdfLkQK14l5TjRW099KCEKcVtIQ=",
+      "hash": "sha256-oEiUerBp\/1+gFpyzCuZC3hD00MUIajncrrPcthtTZz4=",
       "url": "_framework\/blazor.boot.json"
+    },
+    {
+      "hash": "sha256-HopJKwHvn6Cr9f\/7OiDpO\/6tEO8EmXJrrin9lzeOOXg=",
+      "url": "_content\/Blazor.Bootstrap\/blazor.bootstrap.css"
+    },
+    {
+      "hash": "sha256-X\/DJ5i9rFNw+60KIBuJ1SA0RXVJAbsW3eiSoeo+GhQw=",
+      "url": "_content\/Blazor.Bootstrap\/blazor.bootstrap.js"
+    },
+    {
+      "hash": "sha256-oAIj2P0Z\/6hTwjGA3OGvWLdxMP4KwE35+AQzWQTpxAg=",
+      "url": "_content\/Blazor.Bootstrap\/blazor.bootstrap.pdf.js"
+    },
+    {
+      "hash": "sha256-du71NM6e2+m9l81ldV+Gbr74ER7Xx1GnJFg+rIY6OQU=",
+      "url": "_content\/Blazor.Bootstrap\/blazor.bootstrap.sortable-list.js"
+    },
+    {
+      "hash": "sha256-J1yB7ftYf6PWiU1781eE0JHBGfd1MV\/XlLaxpVy09RU=",
+      "url": "_content\/Blazor.Bootstrap\/icon\/128X128.png"
+    },
+    {
+      "hash": "sha256-XX7we2CiSWzj3rsNtKFCod90LBYAJ3bo8rmu4EuN7SQ=",
+      "url": "_content\/Blazor.Bootstrap\/pdfjs-4.0.379.min.js"
+    },
+    {
+      "hash": "sha256-JbwqIn9Fic7JuWyTXuNnAA1T0dYQ2tkTi9HhrSltUtQ=",
+      "url": "_content\/Blazor.Bootstrap\/pdfjs-4.0.379.worker.min.js"
+    },
+    {
+      "hash": "sha256-E9QnlAmc6FCKQ12unLwOlh6hUcUx\/XUc2bitsqVDVco=",
+      "url": "_content\/Blazor.Bootstrap\/Blazor.Bootstrap.bundle.scp.css"
     }
   ],
-  "version": "6N3Xh6Mb"
+  "version": "e53EKzEh"
 };

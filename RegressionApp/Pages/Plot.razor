@@ -4,113 +4,36 @@
 
 <p>This is for plots and graphs.</p>
 
-<BarChart @ref="barChart" Width="500" Height="300" />
-
-<div class="mt-5">
-    <Button Type="ButtonType.Button" Color="ButtonColor.Primary" Size="ButtonSize.Small" @onclick="async () => await RandomizeAsync()"> Randomize </Button>
-    <Button Type="ButtonType.Button" Color="ButtonColor.Primary" Size="ButtonSize.Small" @onclick="async () => await AddDatasetAsync()"> Add Dataset </Button>
-    <Button Type="ButtonType.Button" Color="ButtonColor.Primary" Size="ButtonSize.Small" @onclick="async () => await AddDataAsync()">Add Data</Button>
-    <Button Type="ButtonType.Button" Color="ButtonColor.Primary" Size="ButtonSize.Small" @onclick="async () => await ShowHorizontalBarChartAsync()">Horizontal Bar Chart</Button>
-    <Button Type="ButtonType.Button" Color="ButtonColor.Primary" Size="ButtonSize.Small" @onclick="async () => await ShowVerticalBarChartAsync()">Vertical Bar Chart</Button>
-</div>
+<LineChart @ref="lineChart" Width="800" />
 
 @code {
-    private BarChart barChart = default!;
-    private BarChartOptions barChartOptions = default!;
+    private LineChart lineChart = default!;
+    private LineChartOptions lineChartOptions = default!;
     private ChartData chartData = default!;
 
-    private int datasetsCount = 0;
-    private int labelsCount = 0;
-    private string[] months = { "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December" };
+    private int datasetsCount;
+    private int labelsCount;
+
     private Random random = new();
 
     protected override void OnInitialized()
     {
-        chartData = new ChartData { Labels = GetDefaultDataLabels(6), Datasets = GetDefaultDataSets(3) };
-        barChartOptions = new BarChartOptions { Responsive = true, Interaction = new Interaction { Mode = InteractionMode.Index } };
+        chartData = new ChartData { Labels = GetDefaultDataLabels(6), Datasets = GetDefaultDataSets(1) };
+        lineChartOptions = new() { Responsive = true, Interaction = new Interaction { Mode = InteractionMode.Index } };
+        lineChartOptions.Scales.Y!.Max = 10;
     }
 
     protected override async Task OnAfterRenderAsync(bool firstRender)
     {
         if (firstRender)
         {
-            await barChart.InitializeAsync(chartData, barChartOptions);
+            await lineChart.InitializeAsync(chartData, lineChartOptions);
         }
         await base.OnAfterRenderAsync(firstRender);
     }
 
-    private async Task RandomizeAsync()
-    {
-        if (chartData is null || chartData.Datasets is null || !chartData.Datasets.Any()) return;
 
-        var newDatasets = new List<IChartDataset>();
-
-        foreach (var dataset in chartData.Datasets)
-        {
-            if (dataset is BarChartDataset barChartDataset
-                && barChartDataset is not null
-                && barChartDataset.Data is not null)
-            {
-                var count = barChartDataset.Data.Count;
-
-                var newData = new List<double?>();
-                for (var i = 0; i < count; i++)
-                {
-                    newData.Add(random.Next(200));
-                }
-
-                barChartDataset.Data = newData;
-                newDatasets.Add(barChartDataset);
-            }
-        }
-
-        chartData.Datasets = newDatasets;
-
-        await barChart.UpdateAsync(chartData, barChartOptions);
-    }
-
-    private async Task AddDatasetAsync()
-    {
-        if (chartData is null || chartData.Datasets is null) return;
-
-        if (datasetsCount >= 12)
-            return;
-
-        var chartDataset = GetRandomBarChartDataset();
-        chartData = await barChart.AddDatasetAsync(chartData, chartDataset, barChartOptions);
-    }
-
-    private async Task AddDataAsync()
-    {
-        if (chartData is null || chartData.Datasets is null)
-            return;
-
-        if (labelsCount >= 12)
-            return;
-
-        var data = new List<IChartDatasetData>();
-        foreach (var dataset in chartData.Datasets)
-        {
-            if (dataset is BarChartDataset barChartDataset)
-                data.Add(new BarChartDatasetData(barChartDataset.Label, random.Next(200)));
-        }
-
-        chartData = await barChart.AddDataAsync(chartData, GetNextDataLabel(), data);
-    }
-
-    private async Task ShowHorizontalBarChartAsync()
-    {
-        barChartOptions.IndexAxis = "y";
-        await barChart.UpdateAsync(chartData, barChartOptions);
-    }
-
-    private async Task ShowVerticalBarChartAsync()
-    {
-        barChartOptions.IndexAxis = "x";
-        await barChart.UpdateAsync(chartData, barChartOptions);
-    }
-
-    #region Data Preparation
+    #region Data functions
 
     private List<IChartDataset> GetDefaultDataSets(int numberOfDatasets)
     {
@@ -118,38 +41,38 @@
 
         for (var index = 0; index < numberOfDatasets; index++)
         {
-            datasets.Add(GetRandomBarChartDataset());
+            datasets.Add(GetRandomLineChartDataset());
         }
 
         return datasets;
     }
 
-    private BarChartDataset GetRandomBarChartDataset()
+    private LineChartDataset GetRandomLineChartDataset()
     {
         var c = ColorUtility.CategoricalTwelveColors[datasetsCount].ToColor();
 
         datasetsCount += 1;
 
-        return new BarChartDataset()
+        return new LineChartDataset
             {
-                Label = $"Product {datasetsCount}",
-                Data = GetRandomData(),
-                BackgroundColor = new List<string> { c.ToRgbString() },
-                BorderColor = new List<string> { c.ToRgbString() },
-                BorderWidth = new List<double> { 0 },
+                Label = $"Team {datasetsCount}",
+                Data = GetData(),
+                BackgroundColor = c.ToRgbString(),
+                BorderColor = c.ToRgbString(),
+                BorderWidth = 2,
+                HoverBorderWidth = 4,
+                // PointBackgroundColor = c.ToRgbString(),
+                // PointRadius = 0, // hide points
+                // PointHoverRadius = 4,
             };
     }
 
-    private List<double?> GetRandomData()
+    private List<double?> GetData()
     {
-        var data = new List<double?>();
-        for (var index = 0; index < labelsCount; index++)
-        {
-            data.Add(random.Next(200));
-        }
-
+        var data = new List<double?>() { 0.0, 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 };
         return data;
     }
+
 
     private List<string> GetDefaultDataLabels(int numberOfLabels)
     {
@@ -165,9 +88,11 @@
     private string GetNextDataLabel()
     {
         labelsCount += 1;
-        return months[labelsCount - 1];
+        return $"Day {labelsCount}";
     }
 
-    #endregion Data Preparation
+
+    #endregion Data functions
+
 }
 

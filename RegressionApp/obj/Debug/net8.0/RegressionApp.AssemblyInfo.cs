@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("RegressionApp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cd145ab1bca5e3b4d9dcbdd1a3837cdabeb2f2d4")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+86ca9c7085c350eae72e958abcb242160ff4710c")]
 [assembly: System.Reflection.AssemblyProductAttribute("RegressionApp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("RegressionApp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
