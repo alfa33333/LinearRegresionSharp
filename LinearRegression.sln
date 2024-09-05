@@ -1,8 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataRead", "DataRead\DataRead.csproj", "{10C88712-56CA-43DC-AB8B-16DAA0E5D573}"
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35222.181
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataRead", "DataRead\DataRead.csproj", "{10C88712-56CA-43DC-AB8B-16DAA0E5D573}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinearRegression", "LinearRegression\LinearRegression.csproj", "{8853D4D0-8722-45CA-90BB-82A449A94DE1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LinearRegression", "LinearRegression\LinearRegression.csproj", "{8853D4D0-8722-45CA-90BB-82A449A94DE1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RegressionApp", "RegressionApp\RegressionApp.csproj", "{7F15F338-CAB5-4D5B-99B5-D1AA3A63957D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -18,5 +23,15 @@ Global
 		{8853D4D0-8722-45CA-90BB-82A449A94DE1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8853D4D0-8722-45CA-90BB-82A449A94DE1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8853D4D0-8722-45CA-90BB-82A449A94DE1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7F15F338-CAB5-4D5B-99B5-D1AA3A63957D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7F15F338-CAB5-4D5B-99B5-D1AA3A63957D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7F15F338-CAB5-4D5B-99B5-D1AA3A63957D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7F15F338-CAB5-4D5B-99B5-D1AA3A63957D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5CDD880B-5D87-4CBD-BCA5-AA5B1D70816F}
 	EndGlobalSection
 EndGlobal
