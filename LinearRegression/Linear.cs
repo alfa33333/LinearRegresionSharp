@@ -57,7 +57,6 @@ public class LinearModel
             var designMatrix = Matrix<float>.Build.Dense(x.Length, 1 + Predictors.ColumnCount);
             designMatrix.SetSubMatrix(0, 1, Matrix<float>.Build.DenseOfColumnArrays(x));
             designMatrix.SetColumn(0, Generate.Repeat(x.Length, 1.0f));
-            var result = designMatrix.TransposeThisAndMultiply(_Coefficients).ToArray();
             return designMatrix.TransposeThisAndMultiply(_Coefficients).ToArray();
         }
     }
