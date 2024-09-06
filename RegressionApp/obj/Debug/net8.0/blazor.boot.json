@@ -1,12 +1,12 @@
 {
   "mainAssemblyName": "RegressionApp",
   "resources": {
-    "hash": "sha256-aMu1aD69ai/Z8LHeAWZzTvhS0yKBKll6dJK3TN0K3RA=",
+    "hash": "sha256-5ob/+lBgctoUS2dxVHRd5b6O5887CEyVh83QAMC7Q38=",
     "jsModuleNative": {
-      "dotnet.native.8.0.8.51ek95j1zz.js": "sha256-juC5sA7gHTLXFEhAKgdM2/RavswpwCtDfjYGsAz2FXg="
+      "dotnet.native.8.0.8.7yf22kfjty.js": "sha256-juC5sA7gHTLXFEhAKgdM2/RavswpwCtDfjYGsAz2FXg="
     },
     "jsModuleRuntime": {
-      "dotnet.runtime.8.0.8.z6xsxzafbj.js": "sha256-0Dpj/NkVD5WqSC16ZvJLmlc38iv9+Je+umYBVOycPVU="
+      "dotnet.runtime.8.0.8.c3mjv80gmj.js": "sha256-0Dpj/NkVD5WqSC16ZvJLmlc38iv9+Je+umYBVOycPVU="
     },
     "wasmNative": {
       "dotnet.native.wasm": "sha256-OcUTcd7qQceenWEF93409WZcaXp2qQbEyhdchog4RUE="
@@ -209,10 +209,16 @@
       "mscorlib.wasm": "sha256-Gz8PyW2/fwihe5ul81OwmRUrU71r+KtbyRw6xlOGD+Q=",
       "netstandard.wasm": "sha256-jMTqIQzoDS810lyhZpMO5eEC36EzntXqSVn+2qwkOMQ=",
       "System.Private.CoreLib.wasm": "sha256-NFj5WE5VLP2LptZIRJCUIc1AMk06FmxpsSILfPISwAw=",
-      "RegressionApp.wasm": "sha256-KadTSHnlhQQtJDoQBZdHhjUS35FNWb+Df2bvEv1GplA="
+      "DataRead.wasm": "sha256-daOVZeFG1lnd0TppcYU8XzZEJhfEnW0cec74G342nRA=",
+      "Microsoft.Data.Analysis.wasm": "sha256-HHxlldRhpHE1zCqeUuS1bGEmpa64k2115Sdd0IXtEfs=",
+      "CsvHelper.wasm": "sha256-BXz5RCSFBrg3KCDZD4lxgyWmw1YH6vUT0N/oIQdCKfA=",
+      "Microsoft.ML.DataView.wasm": "sha256-8oxJCPwQsf53kHdF6tAv71JvuifQwpNRMtKwnRxN1AI=",
+      "Apache.Arrow.wasm": "sha256-yrw5NoY8+dEr5eQ/VSbFR412U1zNUGMydFB7sTgvAAc=",
+      "RegressionApp.wasm": "sha256-nwcz7CYhEKrxf64HlhjDAY8umGRRJL5uK1NIucjiYtY="
     },
     "pdb": {
-      "RegressionApp.pdb": "sha256-vB3mtNl7RG24f3lqXjAe3NBcVxH5yWNd7aWa5LDq7Oc="
+      "DataRead.pdb": "sha256-Zes8YJULebpLav5OhHOO8jtK4kNQAuyOLYd3cnM6IjQ=",
+      "RegressionApp.pdb": "sha256-NciHrlvYd4XOvcPItxLQtVy5Q6jj/IpaOJkcY10MqqM="
     }
   },
   "cacheBootResources": true,

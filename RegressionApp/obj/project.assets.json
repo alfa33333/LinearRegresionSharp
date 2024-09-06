@@ -453,6 +453,12 @@
           "build/Microsoft.NET.Sdk.WebAssembly.Pack.targets": {}
         }
       },
+      "PublishSPAforGitHubPages.Build/2.2.0": {
+        "type": "package",
+        "build": {
+          "build/PublishSPAforGitHubPages.Build.targets": {}
+        }
+      },
       "System.IO.Pipelines/8.0.0": {
         "type": "package",
         "compile": {
@@ -961,6 +967,12 @@
         "build": {
           "build/Microsoft.NET.Sdk.WebAssembly.Pack.props": {},
           "build/Microsoft.NET.Sdk.WebAssembly.Pack.targets": {}
+        }
+      },
+      "PublishSPAforGitHubPages.Build/2.2.0": {
+        "type": "package",
+        "build": {
+          "build/PublishSPAforGitHubPages.Build.targets": {}
         }
       },
       "System.IO.Pipelines/8.0.0": {
@@ -1975,6 +1987,27 @@
         "tools/net8.0/System.Windows.Extensions.dll"
       ]
     },
+    "PublishSPAforGitHubPages.Build/2.2.0": {
+      "sha512": "Nb9vCdVsZh/u1OeU2dPw/rD9mxWZYGCSrk8b3S3Y1qtXXzj4HY2W3kl4oE0XlJVgXKhbFR6RhzMBKD0ozFKk2w==",
+      "type": "package",
+      "path": "publishspaforgithubpages.build/2.2.0",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "build/PublishSPAforGitHubPages.Build.targets",
+        "bundle/scripts/brotliloader.js",
+        "bundle/scripts/brotliloader.min.js",
+        "bundle/scripts/decode.js",
+        "bundle/scripts/decode.min.js",
+        "nupkg-icon.png",
+        "publishspaforgithubpages.build.2.2.0.nupkg.sha512",
+        "publishspaforgithubpages.build.nuspec",
+        "tools/BrotliSharpLib.dll",
+        "tools/PublishSPAforGitHubPages.Build.dll"
+      ]
+    },
     "System.IO.Pipelines/8.0.0": {
       "sha512": "FHNOatmUq0sqJOkTx+UF/9YK1f180cnW5FVqnQMvYUN0elp6wFzbtPSiqbo1/ru8ICp43JM1i7kKkk6GsNGHlA==",
       "type": "package",
@@ -2116,31 +2149,33 @@
   "projectFileDependencyGroups": {
     "net8.0": [
       "Blazor.Bootstrap >= 3.0.0",
+      "Microsoft.AspNetCore.Components >= 8.0.8",
       "Microsoft.AspNetCore.Components.WebAssembly >= 8.0.8",
       "Microsoft.AspNetCore.Components.WebAssembly.DevServer >= 8.0.8",
       "Microsoft.NET.ILLink.Tasks >= 8.0.8",
       "Microsoft.NET.Sdk.WebAssembly.Pack >= 8.0.8",
+      "PublishSPAforGitHubPages.Build >= 2.2.0",
       "System.Text.Json >= 8.0.4"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\alfa33333\\.nuget\\packages\\": {},
+    "C:\\Users\\alfa3\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\alfa33333\\Documents\\GitHub\\LinearRegresionSharp\\RegressionApp\\RegressionApp.csproj",
+      "projectUniqueName": "C:\\Users\\alfa3\\github\\LinearRegresionSharp\\RegressionApp\\RegressionApp.csproj",
       "projectName": "RegressionApp",
-      "projectPath": "C:\\Users\\alfa33333\\Documents\\GitHub\\LinearRegresionSharp\\RegressionApp\\RegressionApp.csproj",
-      "packagesPath": "C:\\Users\\alfa33333\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\alfa33333\\Documents\\GitHub\\LinearRegresionSharp\\RegressionApp\\obj\\",
+      "projectPath": "C:\\Users\\alfa3\\github\\LinearRegresionSharp\\RegressionApp\\RegressionApp.csproj",
+      "packagesPath": "C:\\Users\\alfa3\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\alfa3\\github\\LinearRegresionSharp\\RegressionApp\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\alfa33333\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\alfa3\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -2177,6 +2212,10 @@
             "target": "Package",
             "version": "[3.0.0, )"
           },
+          "Microsoft.AspNetCore.Components": {
+            "target": "Package",
+            "version": "[8.0.8, )"
+          },
           "Microsoft.AspNetCore.Components.WebAssembly": {
             "target": "Package",
             "version": "[8.0.8, )"
@@ -2197,6 +2236,10 @@
             "target": "Package",
             "version": "[8.0.8, )",
             "autoReferenced": true
+          },
+          "PublishSPAforGitHubPages.Build": {
+            "target": "Package",
+            "version": "[2.2.0, )"
           },
           "System.Text.Json": {
             "target": "Package",
