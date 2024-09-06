@@ -2075,3 +2075,8 @@ C:\Users\alfa3\github\LinearRegresionSharp\RegressionApp\bin\Debug\net8.0\icudt_
 C:\Users\alfa3\github\LinearRegresionSharp\RegressionApp\obj\Debug\net8.0\service-worker-assets.js.build
 C:\Users\alfa3\github\LinearRegresionSharp\RegressionApp\obj\Debug\net8.0\Regressi.16A5392F.Up2Date
 C:\Users\alfa3\github\LinearRegresionSharp\RegressionApp\obj\Debug\net8.0\ref\RegressionApp.dll
+C:\Users\alfa33333\Documents\GitHub\LinearRegresionSharp\RegressionApp\bin\Debug\net8.0\wwwroot\_framework\BlazorBootstrap.wasm
+C:\Users\alfa33333\Documents\GitHub\LinearRegresionSharp\RegressionApp\bin\Debug\net8.0\wwwroot\_framework\BlazorBootstrap.wasm.gz
+C:\Users\alfa33333\Documents\GitHub\LinearRegresionSharp\RegressionApp\bin\Debug\net8.0\BlazorBootstrap.dll
+C:\Users\alfa33333\Documents\GitHub\LinearRegresionSharp\RegressionApp\obj\Debug\net8.0\webcil\BlazorBootstrap.wasm
+C:\Users\alfa33333\Documents\GitHub\LinearRegresionSharp\RegressionApp\obj\Debug\net8.0\compressed\xcimx434hp.gz

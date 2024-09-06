@@ -1,12 +1,12 @@
 {
   "mainAssemblyName": "RegressionApp",
   "resources": {
-    "hash": "sha256-6sWL7RclG932cvGL7PGxo7uoO2aGT/XQWH9hLLOlaSM=",
+    "hash": "sha256-aMu1aD69ai/Z8LHeAWZzTvhS0yKBKll6dJK3TN0K3RA=",
     "jsModuleNative": {
-      "dotnet.native.8.0.8.7yf22kfjty.js": "sha256-juC5sA7gHTLXFEhAKgdM2/RavswpwCtDfjYGsAz2FXg="
+      "dotnet.native.8.0.8.51ek95j1zz.js": "sha256-juC5sA7gHTLXFEhAKgdM2/RavswpwCtDfjYGsAz2FXg="
     },
     "jsModuleRuntime": {
-      "dotnet.runtime.8.0.8.c3mjv80gmj.js": "sha256-0Dpj/NkVD5WqSC16ZvJLmlc38iv9+Je+umYBVOycPVU="
+      "dotnet.runtime.8.0.8.z6xsxzafbj.js": "sha256-0Dpj/NkVD5WqSC16ZvJLmlc38iv9+Je+umYBVOycPVU="
     },
     "wasmNative": {
       "dotnet.native.wasm": "sha256-OcUTcd7qQceenWEF93409WZcaXp2qQbEyhdchog4RUE="
@@ -209,10 +209,10 @@
       "mscorlib.wasm": "sha256-Gz8PyW2/fwihe5ul81OwmRUrU71r+KtbyRw6xlOGD+Q=",
       "netstandard.wasm": "sha256-jMTqIQzoDS810lyhZpMO5eEC36EzntXqSVn+2qwkOMQ=",
       "System.Private.CoreLib.wasm": "sha256-NFj5WE5VLP2LptZIRJCUIc1AMk06FmxpsSILfPISwAw=",
-      "RegressionApp.wasm": "sha256-b9UG9QPn2TD0y9DUVpayRqc+aBh16zELgqNIUUNme9w="
+      "RegressionApp.wasm": "sha256-KadTSHnlhQQtJDoQBZdHhjUS35FNWb+Df2bvEv1GplA="
     },
     "pdb": {
-      "RegressionApp.pdb": "sha256-zTFvGwGqjE0176/t5C6oK7f8NNsZFdzNFKO6Az9fH+E="
+      "RegressionApp.pdb": "sha256-vB3mtNl7RG24f3lqXjAe3NBcVxH5yWNd7aWa5LDq7Oc="
     }
   },
   "cacheBootResources": true,
