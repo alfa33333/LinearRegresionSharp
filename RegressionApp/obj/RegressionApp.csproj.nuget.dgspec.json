@@ -54,6 +54,10 @@
               "target": "Package",
               "version": "[3.0.0, )"
             },
+            "MathNet.Numerics": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
             "Microsoft.AspNetCore.Components": {
               "target": "Package",
               "version": "[8.0.8, )"
@@ -66,6 +70,10 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[8.0.8, )"
+            },
+            "Microsoft.Data.Analysis": {
+              "target": "Package",
+              "version": "[0.21.1, )"
             },
             "Microsoft.NET.ILLink.Tasks": {
               "suppressParent": "All",
