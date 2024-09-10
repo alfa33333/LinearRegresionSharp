@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "ba3Mckq1o1Y=",
+  "dgSpecHash": "lajiq6qBSu0=",
   "success": true,
   "projectFilePath": "C:\\Users\\alfa33333\\Documents\\GitHub\\LinearRegresionSharp\\RegressionApp\\RegressionApp.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\alfa33333\\.nuget\\packages\\apache.arrow\\11.0.0\\apache.arrow.11.0.0.nupkg.sha512",
     "C:\\Users\\alfa33333\\.nuget\\packages\\blazor.bootstrap\\3.0.0\\blazor.bootstrap.3.0.0.nupkg.sha512",
+    "C:\\Users\\alfa33333\\.nuget\\packages\\csvhelper\\33.0.1\\csvhelper.33.0.1.nupkg.sha512",
     "C:\\Users\\alfa33333\\.nuget\\packages\\mathnet.numerics\\5.0.0\\mathnet.numerics.5.0.0.nupkg.sha512",
     "C:\\Users\\alfa33333\\.nuget\\packages\\microsoft.aspnetcore.authorization\\8.0.8\\microsoft.aspnetcore.authorization.8.0.8.nupkg.sha512",
     "C:\\Users\\alfa33333\\.nuget\\packages\\microsoft.aspnetcore.components\\8.0.8\\microsoft.aspnetcore.components.8.0.8.nupkg.sha512",
