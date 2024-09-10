@@ -8,6 +8,7 @@
 <LineChart @ref="lineChart" Width="800" />
 </div>
 
+
 <div class="mt-5">
     <Button Type="ButtonType.Button" Class="mb-2" Color="ButtonColor.Primary" Size="ButtonSize.Small" @onclick="async () => await RandomizeAsync()"> Randomize </Button>
     <Button Type="ButtonType.Button" Class="mb-2" Color="ButtonColor.Primary" Size="ButtonSize.Small" @onclick="async () => await fitData()" Disabled="@(datasetsCount >= 2)"> Fit Data </Button>
@@ -140,6 +141,7 @@
                 BorderColor = c.ToRgbString(),
                 BorderWidth = 2,
                 HoverBorderWidth = 4,
+                ShowLine = false,
                 // PointBackgroundColor = c.ToRgbString(),
                 // PointRadius = 0, // hide points
                 // PointHoverRadius = 4,

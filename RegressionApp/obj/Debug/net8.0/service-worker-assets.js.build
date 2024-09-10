@@ -877,15 +877,15 @@
       "url": "_framework\/DataRead.pdb"
     },
     {
-      "hash": "sha256-BWaGgLN+VqjuPlPAsywjz1GVEVh\/LjnsMYqOwMe6c5Q=",
+      "hash": "sha256-JTbb9xTO61lUWvXJF6uNVdmYfcQj+W52LD5n4M2tX0s=",
       "url": "_framework\/RegressionApp.wasm"
     },
     {
-      "hash": "sha256-hDywgedWM6YRf74qTkxvfE2a3t2dgLgyfxLejVO+3bQ=",
+      "hash": "sha256-8aVb1++4wR5qhCgZo4XHvUx025VzjkC1WlSt\/6CaXgA=",
       "url": "_framework\/RegressionApp.pdb"
     },
     {
-      "hash": "sha256-HIpX4NCzGLRQfqY1dFge07C13jqS0tg4F8hasYQyPH4=",
+      "hash": "sha256-VUWhHJyDd8kvz0Cc7lBJcANdR2xK3xn0V9Vi5Tml5fo=",
       "url": "_framework\/blazor.boot.json"
     },
     {
@@ -921,5 +921,5 @@
       "url": "_content\/Blazor.Bootstrap\/Blazor.Bootstrap.bundle.scp.css"
     }
   ],
-  "version": "iduX+5P2"
+  "version": "1ve8ytHo"
 };
