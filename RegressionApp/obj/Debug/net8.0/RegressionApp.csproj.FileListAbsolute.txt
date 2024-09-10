@@ -2143,3 +2143,8 @@ C:\Users\alfa33333\Documents\GitHub\LinearRegresionSharp\RegressionApp\obj\Debug
 C:\Users\alfa33333\Documents\GitHub\LinearRegresionSharp\RegressionApp\obj\Debug\net8.0\compressed\9b5nj23g79.gz
 C:\Users\alfa33333\Documents\GitHub\LinearRegresionSharp\RegressionApp\obj\Debug\net8.0\compressed\jw795dpigu.gz
 C:\Users\alfa33333\Documents\GitHub\LinearRegresionSharp\RegressionApp\obj\Debug\net8.0\compressed\tdt2f7hgfw.gz
+C:\Users\alfa3\github\LinearRegresionSharp\RegressionApp\bin\Debug\net8.0\wwwroot\_framework\MathNet.Numerics.wasm
+C:\Users\alfa3\github\LinearRegresionSharp\RegressionApp\bin\Debug\net8.0\wwwroot\_framework\MathNet.Numerics.wasm.gz
+C:\Users\alfa3\github\LinearRegresionSharp\RegressionApp\bin\Debug\net8.0\MathNet.Numerics.dll
+C:\Users\alfa3\github\LinearRegresionSharp\RegressionApp\obj\Debug\net8.0\webcil\MathNet.Numerics.wasm
+C:\Users\alfa3\github\LinearRegresionSharp\RegressionApp\obj\Debug\net8.0\compressed\jz2gjxukr7.gz

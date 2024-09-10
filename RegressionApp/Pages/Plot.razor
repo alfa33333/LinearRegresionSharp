@@ -47,26 +47,28 @@
 
         var newDatasets = new List<IChartDataset>();
 
-        foreach (var dataset in chartData.Datasets)
+        var dataset = chartData.Datasets.First();
+        if (dataset is LineChartDataset lineChartDataset
+            && lineChartDataset is not null
+            && lineChartDataset.Data is not null)
         {
-            if (dataset is LineChartDataset lineChartDataset
-                && lineChartDataset is not null
-                && lineChartDataset.Data is not null)
+            var count = lineChartDataset.Data.Count;
+
+            var newData = new List<double?>();
+            for (var i = 0; i < count; i++)
             {
-                var count = lineChartDataset.Data.Count;
-
-                var newData = new List<double?>();
-                for (var i = 0; i < count; i++)
-                {
-                    newData.Add(random.Next(10));
-                }
-
-                lineChartDataset.Data = newData;
-                newDatasets.Add(lineChartDataset);
+                newData.Add(random.Next(10));
             }
+
+            lineChartDataset.Data = newData;
+            newDatasets.Add(lineChartDataset);
         }
 
         chartData.Datasets = newDatasets;
+        if (datasetsCount > 1)
+        {
+            datasetsCount = 1;
+        }
 
         await lineChart.UpdateValuesAsync(chartData);
     }

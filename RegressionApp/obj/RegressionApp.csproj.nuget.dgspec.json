@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\alfa33333\\Documents\\GitHub\\LinearRegresionSharp\\RegressionApp\\RegressionApp.csproj": {}
+    "C:\\Users\\alfa3\\github\\LinearRegresionSharp\\RegressionApp\\RegressionApp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\alfa33333\\Documents\\GitHub\\LinearRegresionSharp\\RegressionApp\\RegressionApp.csproj": {
+    "C:\\Users\\alfa3\\github\\LinearRegresionSharp\\RegressionApp\\RegressionApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\alfa33333\\Documents\\GitHub\\LinearRegresionSharp\\RegressionApp\\RegressionApp.csproj",
+        "projectUniqueName": "C:\\Users\\alfa3\\github\\LinearRegresionSharp\\RegressionApp\\RegressionApp.csproj",
         "projectName": "RegressionApp",
-        "projectPath": "C:\\Users\\alfa33333\\Documents\\GitHub\\LinearRegresionSharp\\RegressionApp\\RegressionApp.csproj",
-        "packagesPath": "C:\\Users\\alfa33333\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\alfa33333\\Documents\\GitHub\\LinearRegresionSharp\\RegressionApp\\obj\\",
+        "projectPath": "C:\\Users\\alfa3\\github\\LinearRegresionSharp\\RegressionApp\\RegressionApp.csproj",
+        "packagesPath": "C:\\Users\\alfa3\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\alfa3\\github\\LinearRegresionSharp\\RegressionApp\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\alfa33333\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\alfa3\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],

@@ -5,7 +5,7 @@
       "url": "css\/app.css"
     },
     {
-      "hash": "sha256-z8OR40MowJ8GgK6P89Y+hiJK5+cclzFHzLhFQLL92bg=",
+      "hash": "sha256-SiIVMGgRhdXjKSTIddX7mh9IbOXVcwQWc7\/p4nS6D\/0=",
       "url": "css\/bootstrap\/bootstrap.min.css"
     },
     {
@@ -842,7 +842,7 @@
     },
     {
       "hash": "sha256-juC5sA7gHTLXFEhAKgdM2\/RavswpwCtDfjYGsAz2FXg=",
-      "url": "_framework\/dotnet.native.8.0.8.51ek95j1zz.js"
+      "url": "_framework\/dotnet.native.8.0.8.7yf22kfjty.js"
     },
     {
       "hash": "sha256-OcUTcd7qQceenWEF93409WZcaXp2qQbEyhdchog4RUE=",
@@ -850,7 +850,7 @@
     },
     {
       "hash": "sha256-0Dpj\/NkVD5WqSC16ZvJLmlc38iv9+Je+umYBVOycPVU=",
-      "url": "_framework\/dotnet.runtime.8.0.8.z6xsxzafbj.js"
+      "url": "_framework\/dotnet.runtime.8.0.8.c3mjv80gmj.js"
     },
     {
       "hash": "sha256-3hEn0jZvWmxCOJ4aSbwsZwIf9EfBnfZfTsxh7\/j3n0E=",
@@ -873,19 +873,19 @@
       "url": "_framework\/DataRead.wasm"
     },
     {
-      "hash": "sha256-5JC+2HukO3D15UPSXxj0+IJWcp0Z1tEXTFjWmOoJi\/o=",
+      "hash": "sha256-Zes8YJULebpLav5OhHOO8jtK4kNQAuyOLYd3cnM6IjQ=",
       "url": "_framework\/DataRead.pdb"
     },
     {
-      "hash": "sha256-rXAzvDXnxuYejwsja08GobUgojZgAhTcR581VNP9wM0=",
+      "hash": "sha256-BWaGgLN+VqjuPlPAsywjz1GVEVh\/LjnsMYqOwMe6c5Q=",
       "url": "_framework\/RegressionApp.wasm"
     },
     {
-      "hash": "sha256-LhB\/vCFqnxQxeu\/sISQaaokZQaCrVMDtHe8Ky\/HP4MI=",
+      "hash": "sha256-hDywgedWM6YRf74qTkxvfE2a3t2dgLgyfxLejVO+3bQ=",
       "url": "_framework\/RegressionApp.pdb"
     },
     {
-      "hash": "sha256-jnaGqaQNUut1nkVfghUt+61wh+hLAGGOvg3pV1aHLFE=",
+      "hash": "sha256-HIpX4NCzGLRQfqY1dFge07C13jqS0tg4F8hasYQyPH4=",
       "url": "_framework\/blazor.boot.json"
     },
     {
@@ -921,5 +921,5 @@
       "url": "_content\/Blazor.Bootstrap\/Blazor.Bootstrap.bundle.scp.css"
     }
   ],
-  "version": "xAfLpTCC"
+  "version": "iduX+5P2"
 };
