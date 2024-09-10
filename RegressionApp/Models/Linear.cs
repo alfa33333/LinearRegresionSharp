@@ -49,14 +49,14 @@ public class LinearModel
         {
             var designMatrix = Matrix<float>.Build.Dense(x.Length, Predictors.ColumnCount);
             designMatrix.SetSubMatrix(0, 0, Matrix<float>.Build.DenseOfColumnArrays(x));
-            return designMatrix.TransposeThisAndMultiply(_Coefficients).ToArray();
+            return designMatrix.Multiply(_Coefficients).ToArray();
         }
         else
         {
             var designMatrix = Matrix<float>.Build.Dense(x.Length, 1 + Predictors.ColumnCount);
             designMatrix.SetSubMatrix(0, 1, Matrix<float>.Build.DenseOfColumnArrays(x));
             designMatrix.SetColumn(0, Generate.Repeat(x.Length, 1.0f));
-            return designMatrix.TransposeThisAndMultiply(_Coefficients).ToArray();
+            return designMatrix.Multiply(_Coefficients).ToArray();
         }
     }
 }

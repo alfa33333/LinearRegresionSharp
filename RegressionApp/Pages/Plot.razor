@@ -10,6 +10,7 @@
 
 <div class="mt-5">
     <Button Type="ButtonType.Button" Class="mb-2" Color="ButtonColor.Primary" Size="ButtonSize.Small" @onclick="async () => await RandomizeAsync()"> Randomize </Button>
+    <Button Type="ButtonType.Button" Class="mb-2" Color="ButtonColor.Primary" Size="ButtonSize.Small" @onclick="async () => await fitData()" Disabled="@(datasetsCount >= 2)"> Fit Data </Button>
 </div>
 
 @code {
@@ -57,7 +58,7 @@
                 var newData = new List<double?>();
                 for (var i = 0; i < count; i++)
                 {
-                    newData.Add(random.Next(200));
+                    newData.Add(random.Next(10));
                 }
 
                 lineChartDataset.Data = newData;
@@ -68,6 +69,42 @@
         chartData.Datasets = newDatasets;
 
         await lineChart.UpdateValuesAsync(chartData);
+    }
+
+    private async Task fitData()
+    {
+        if (chartData is null || chartData.Datasets is null) return;
+
+        var c = ColorUtility.CategoricalTwelveColors[datasetsCount].ToColor();
+        datasetsCount += 1;
+
+        LineChartDataset newDatasets = new LineChartDataset
+            {
+                Label = $"fit dataset",
+                BackgroundColor = c.ToRgbString(),
+                BorderColor = c.ToRgbString(),
+                BorderWidth = 2,
+                HoverBorderWidth = 4,
+            };
+        
+        foreach (var dataset in chartData.Datasets)
+        {
+            if (dataset is LineChartDataset lineChartDataset
+                && lineChartDataset is not null
+                && lineChartDataset.Data is not null)
+            {
+                var dataY = lineChartDataset.Data.ConvertAll(f => f is null? 0 : (float)f).ToArray();
+                var dataX = Enumerable.Range(0, dataY.Length).Select(number => (float)number).ToArray();
+
+                linearModel.LoadData(dataX, dataY);
+                linearModel.Fit();
+                List<Double?> newData = linearModel.Predict(dataX).ToList().ConvertAll(f => (double?)f);
+                newDatasets.Data = newData;
+            }
+
+        }
+
+        chartData = await lineChart.AddDatasetAsync(chartData, newDatasets, lineChartOptions);
     }
 
 
