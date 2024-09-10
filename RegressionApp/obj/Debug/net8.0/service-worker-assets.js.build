@@ -5,7 +5,7 @@
       "url": "css\/app.css"
     },
     {
-      "hash": "sha256-SiIVMGgRhdXjKSTIddX7mh9IbOXVcwQWc7\/p4nS6D\/0=",
+      "hash": "sha256-z8OR40MowJ8GgK6P89Y+hiJK5+cclzFHzLhFQLL92bg=",
       "url": "css\/bootstrap\/bootstrap.min.css"
     },
     {
@@ -45,8 +45,20 @@
       "url": "RegressionApp.styles.css"
     },
     {
+      "hash": "sha256-yrw5NoY8+dEr5eQ\/VSbFR412U1zNUGMydFB7sTgvAAc=",
+      "url": "_framework\/Apache.Arrow.wasm"
+    },
+    {
       "hash": "sha256-+jeQHjqZsB2T7+hDAnW2nNVPF+WG1FXmZK6+DEt+gbA=",
       "url": "_framework\/BlazorBootstrap.wasm"
+    },
+    {
+      "hash": "sha256-BXz5RCSFBrg3KCDZD4lxgyWmw1YH6vUT0N\/oIQdCKfA=",
+      "url": "_framework\/CsvHelper.wasm"
+    },
+    {
+      "hash": "sha256-7MB\/AdpJ1M5QLPfFuGFjCLGIJyd1QJSLoYMVWiC8\/QU=",
+      "url": "_framework\/MathNet.Numerics.wasm"
     },
     {
       "hash": "sha256-H1yH7iBNYt\/rilvQT6qsv2frcFFOBUKBnRrGQ1AIHnI=",
@@ -71,6 +83,10 @@
     {
       "hash": "sha256-EYT9\/h\/Kkwk4uu2T+qwhrF7jHJ\/1nGEphQJCSlwzA5Y=",
       "url": "_framework\/Microsoft.AspNetCore.Metadata.wasm"
+    },
+    {
+      "hash": "sha256-HHxlldRhpHE1zCqeUuS1bGEmpa64k2115Sdd0IXtEfs=",
+      "url": "_framework\/Microsoft.Data.Analysis.wasm"
     },
     {
       "hash": "sha256-UDGEQR7J3WTfzYMgOzxVIBwFQtKEeJvO8UgrWagypdE=",
@@ -135,6 +151,10 @@
     {
       "hash": "sha256-FWBbfufvNOmor0iVsxtEPG3l1VI97wMYStE1\/bHHo9w=",
       "url": "_framework\/Microsoft.JSInterop.WebAssembly.wasm"
+    },
+    {
+      "hash": "sha256-8oxJCPwQsf53kHdF6tAv71JvuifQwpNRMtKwnRxN1AI=",
+      "url": "_framework\/Microsoft.ML.DataView.wasm"
     },
     {
       "hash": "sha256-JqVBy6SV+3qk+IK3VJiyIDt9CsVk6b1\/ytTXmrI4mTM=",
@@ -822,7 +842,7 @@
     },
     {
       "hash": "sha256-juC5sA7gHTLXFEhAKgdM2\/RavswpwCtDfjYGsAz2FXg=",
-      "url": "_framework\/dotnet.native.8.0.8.7yf22kfjty.js"
+      "url": "_framework\/dotnet.native.8.0.8.51ek95j1zz.js"
     },
     {
       "hash": "sha256-OcUTcd7qQceenWEF93409WZcaXp2qQbEyhdchog4RUE=",
@@ -830,7 +850,7 @@
     },
     {
       "hash": "sha256-0Dpj\/NkVD5WqSC16ZvJLmlc38iv9+Je+umYBVOycPVU=",
-      "url": "_framework\/dotnet.runtime.8.0.8.c3mjv80gmj.js"
+      "url": "_framework\/dotnet.runtime.8.0.8.z6xsxzafbj.js"
     },
     {
       "hash": "sha256-3hEn0jZvWmxCOJ4aSbwsZwIf9EfBnfZfTsxh7\/j3n0E=",
@@ -849,39 +869,23 @@
       "url": "_framework\/icudt_no_CJK.dat"
     },
     {
-      "hash": "sha256-daOVZeFG1lnd0TppcYU8XzZEJhfEnW0cec74G342nRA=",
+      "hash": "sha256-ynUk6hoYLneXpLXrWC12B2z6WhAiwdae8kcDn+0DIyY=",
       "url": "_framework\/DataRead.wasm"
     },
     {
-      "hash": "sha256-HHxlldRhpHE1zCqeUuS1bGEmpa64k2115Sdd0IXtEfs=",
-      "url": "_framework\/Microsoft.Data.Analysis.wasm"
-    },
-    {
-      "hash": "sha256-BXz5RCSFBrg3KCDZD4lxgyWmw1YH6vUT0N\/oIQdCKfA=",
-      "url": "_framework\/CsvHelper.wasm"
-    },
-    {
-      "hash": "sha256-8oxJCPwQsf53kHdF6tAv71JvuifQwpNRMtKwnRxN1AI=",
-      "url": "_framework\/Microsoft.ML.DataView.wasm"
-    },
-    {
-      "hash": "sha256-yrw5NoY8+dEr5eQ\/VSbFR412U1zNUGMydFB7sTgvAAc=",
-      "url": "_framework\/Apache.Arrow.wasm"
-    },
-    {
-      "hash": "sha256-Zes8YJULebpLav5OhHOO8jtK4kNQAuyOLYd3cnM6IjQ=",
+      "hash": "sha256-5JC+2HukO3D15UPSXxj0+IJWcp0Z1tEXTFjWmOoJi\/o=",
       "url": "_framework\/DataRead.pdb"
     },
     {
-      "hash": "sha256-nwcz7CYhEKrxf64HlhjDAY8umGRRJL5uK1NIucjiYtY=",
+      "hash": "sha256-w9qqMYycAtd40xFHQb5DaNaSSPFM3B+kp\/lV2jV0NeM=",
       "url": "_framework\/RegressionApp.wasm"
     },
     {
-      "hash": "sha256-NciHrlvYd4XOvcPItxLQtVy5Q6jj\/IpaOJkcY10MqqM=",
+      "hash": "sha256-F8YOFp+onKgSTtBqDPCayTreiFHqpzoKZDmB3k98JJU=",
       "url": "_framework\/RegressionApp.pdb"
     },
     {
-      "hash": "sha256-a83nxKhZfgdMu3vC0V2LMgViNQNkx9Fhnwh9i6DYVD8=",
+      "hash": "sha256-oPjLMKGSCLGERx9U37BByM9\/\/AJYcpUPMDwSrAnSyBQ=",
       "url": "_framework\/blazor.boot.json"
     },
     {
@@ -917,5 +921,5 @@
       "url": "_content\/Blazor.Bootstrap\/Blazor.Bootstrap.bundle.scp.css"
     }
   ],
-  "version": "PN0D+HqM"
+  "version": "DLeJuCgR"
 };

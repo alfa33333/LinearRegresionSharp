@@ -4,9 +4,16 @@
 
 <p>This is for plots and graphs.</p>
 
+<div class="container-fluid overflow-x-auto">
 <LineChart @ref="lineChart" Width="800" />
+</div>
+
+<div class="mt-5">
+    <Button Type="ButtonType.Button" Class="mb-2" Color="ButtonColor.Primary" Size="ButtonSize.Small" @onclick="async () => await RandomizeAsync()"> Randomize </Button>
+</div>
 
 @code {
+    private LinearModel linearModel = new();
     private LineChart lineChart = default!;
     private LineChartOptions lineChartOptions = default!;
     private ChartData chartData = default!;
@@ -31,7 +38,40 @@
         }
         await base.OnAfterRenderAsync(firstRender);
     }
+    #region data operations
 
+    private async Task RandomizeAsync()
+    {
+        if (chartData is null || chartData.Datasets is null || !chartData.Datasets.Any()) return;
+
+        var newDatasets = new List<IChartDataset>();
+
+        foreach (var dataset in chartData.Datasets)
+        {
+            if (dataset is LineChartDataset lineChartDataset
+                && lineChartDataset is not null
+                && lineChartDataset.Data is not null)
+            {
+                var count = lineChartDataset.Data.Count;
+
+                var newData = new List<double?>();
+                for (var i = 0; i < count; i++)
+                {
+                    newData.Add(random.Next(200));
+                }
+
+                lineChartDataset.Data = newData;
+                newDatasets.Add(lineChartDataset);
+            }
+        }
+
+        chartData.Datasets = newDatasets;
+
+        await lineChart.UpdateValuesAsync(chartData);
+    }
+
+
+    #endregion data operations
 
     #region Data functions
 

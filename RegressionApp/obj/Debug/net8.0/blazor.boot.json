@@ -1,12 +1,12 @@
 {
   "mainAssemblyName": "RegressionApp",
   "resources": {
-    "hash": "sha256-5ob/+lBgctoUS2dxVHRd5b6O5887CEyVh83QAMC7Q38=",
+    "hash": "sha256-N0ULKLfWCPqXgVIaiTvWi1MBqPaTFcZdhHP0mkfPAKw=",
     "jsModuleNative": {
-      "dotnet.native.8.0.8.7yf22kfjty.js": "sha256-juC5sA7gHTLXFEhAKgdM2/RavswpwCtDfjYGsAz2FXg="
+      "dotnet.native.8.0.8.51ek95j1zz.js": "sha256-juC5sA7gHTLXFEhAKgdM2/RavswpwCtDfjYGsAz2FXg="
     },
     "jsModuleRuntime": {
-      "dotnet.runtime.8.0.8.c3mjv80gmj.js": "sha256-0Dpj/NkVD5WqSC16ZvJLmlc38iv9+Je+umYBVOycPVU="
+      "dotnet.runtime.8.0.8.z6xsxzafbj.js": "sha256-0Dpj/NkVD5WqSC16ZvJLmlc38iv9+Je+umYBVOycPVU="
     },
     "wasmNative": {
       "dotnet.native.wasm": "sha256-OcUTcd7qQceenWEF93409WZcaXp2qQbEyhdchog4RUE="
@@ -17,13 +17,17 @@
       "icudt_no_CJK.dat": "sha256-L7sV7NEYP37/Qr2FPCePo5cJqRgTXRwGHuwF5Q+0Nfs="
     },
     "assembly": {
+      "Apache.Arrow.wasm": "sha256-yrw5NoY8+dEr5eQ/VSbFR412U1zNUGMydFB7sTgvAAc=",
       "BlazorBootstrap.wasm": "sha256-+jeQHjqZsB2T7+hDAnW2nNVPF+WG1FXmZK6+DEt+gbA=",
+      "CsvHelper.wasm": "sha256-BXz5RCSFBrg3KCDZD4lxgyWmw1YH6vUT0N/oIQdCKfA=",
+      "MathNet.Numerics.wasm": "sha256-7MB/AdpJ1M5QLPfFuGFjCLGIJyd1QJSLoYMVWiC8/QU=",
       "Microsoft.AspNetCore.Authorization.wasm": "sha256-H1yH7iBNYt/rilvQT6qsv2frcFFOBUKBnRrGQ1AIHnI=",
       "Microsoft.AspNetCore.Components.wasm": "sha256-kPAmhH4D4UN/DyWkGyB1Sxs7tQyVDV150swtUfTSJJ8=",
       "Microsoft.AspNetCore.Components.Forms.wasm": "sha256-ZB9Iu49s5SYUpy+xnFe+KIg2LeHGglqjWkohvxQ8m30=",
       "Microsoft.AspNetCore.Components.Web.wasm": "sha256-AXG8nDVuFAkAqYk+rpFBOg7YgamHxzut3Upfr4na8wA=",
       "Microsoft.AspNetCore.Components.WebAssembly.wasm": "sha256-6tnMX4ZUNb9MmcIXWPmq2IFtKS7q7xsafG8+oeE62uk=",
       "Microsoft.AspNetCore.Metadata.wasm": "sha256-EYT9/h/Kkwk4uu2T+qwhrF7jHJ/1nGEphQJCSlwzA5Y=",
+      "Microsoft.Data.Analysis.wasm": "sha256-HHxlldRhpHE1zCqeUuS1bGEmpa64k2115Sdd0IXtEfs=",
       "Microsoft.Extensions.Configuration.wasm": "sha256-UDGEQR7J3WTfzYMgOzxVIBwFQtKEeJvO8UgrWagypdE=",
       "Microsoft.Extensions.Configuration.Abstractions.wasm": "sha256-yNdqbqDWGiJo943D7LPak5xryCBEsNH0wtdiuU1R9VE=",
       "Microsoft.Extensions.Configuration.Binder.wasm": "sha256-fNNlyyW44y8Gp6dvOtsvHoVNzpT8lrKmPleg5CDhRAo=",
@@ -40,6 +44,7 @@
       "Microsoft.Extensions.Primitives.wasm": "sha256-pVrYOTfjb2ITls3LKIByW1t8jwOAWFhmkIVDewtJ1GE=",
       "Microsoft.JSInterop.wasm": "sha256-okH//v00d9qA97lMQaTcXOMrfK8IIcOYOfzcEhcQle8=",
       "Microsoft.JSInterop.WebAssembly.wasm": "sha256-FWBbfufvNOmor0iVsxtEPG3l1VI97wMYStE1/bHHo9w=",
+      "Microsoft.ML.DataView.wasm": "sha256-8oxJCPwQsf53kHdF6tAv71JvuifQwpNRMtKwnRxN1AI=",
       "System.IO.Pipelines.wasm": "sha256-JqVBy6SV+3qk+IK3VJiyIDt9CsVk6b1/ytTXmrI4mTM=",
       "Microsoft.CSharp.wasm": "sha256-GN0MwA/4MlNKz3Vsxx082ablExUe/q8eec3eRX+NQ20=",
       "Microsoft.VisualBasic.Core.wasm": "sha256-NJUDEhGvk52ZfA9hUjET9z6opkxrepm1OMfzK6VNXJc=",
@@ -209,16 +214,12 @@
       "mscorlib.wasm": "sha256-Gz8PyW2/fwihe5ul81OwmRUrU71r+KtbyRw6xlOGD+Q=",
       "netstandard.wasm": "sha256-jMTqIQzoDS810lyhZpMO5eEC36EzntXqSVn+2qwkOMQ=",
       "System.Private.CoreLib.wasm": "sha256-NFj5WE5VLP2LptZIRJCUIc1AMk06FmxpsSILfPISwAw=",
-      "DataRead.wasm": "sha256-daOVZeFG1lnd0TppcYU8XzZEJhfEnW0cec74G342nRA=",
-      "Microsoft.Data.Analysis.wasm": "sha256-HHxlldRhpHE1zCqeUuS1bGEmpa64k2115Sdd0IXtEfs=",
-      "CsvHelper.wasm": "sha256-BXz5RCSFBrg3KCDZD4lxgyWmw1YH6vUT0N/oIQdCKfA=",
-      "Microsoft.ML.DataView.wasm": "sha256-8oxJCPwQsf53kHdF6tAv71JvuifQwpNRMtKwnRxN1AI=",
-      "Apache.Arrow.wasm": "sha256-yrw5NoY8+dEr5eQ/VSbFR412U1zNUGMydFB7sTgvAAc=",
-      "RegressionApp.wasm": "sha256-nwcz7CYhEKrxf64HlhjDAY8umGRRJL5uK1NIucjiYtY="
+      "DataRead.wasm": "sha256-ynUk6hoYLneXpLXrWC12B2z6WhAiwdae8kcDn+0DIyY=",
+      "RegressionApp.wasm": "sha256-NcOCsQY38ByTxR83li9TzVAJnsGsYUkHZ9kAvIvrX74="
     },
     "pdb": {
-      "DataRead.pdb": "sha256-Zes8YJULebpLav5OhHOO8jtK4kNQAuyOLYd3cnM6IjQ=",
-      "RegressionApp.pdb": "sha256-NciHrlvYd4XOvcPItxLQtVy5Q6jj/IpaOJkcY10MqqM="
+      "DataRead.pdb": "sha256-5JC+2HukO3D15UPSXxj0+IJWcp0Z1tEXTFjWmOoJi/o=",
+      "RegressionApp.pdb": "sha256-nOFBTr0B08O3QkX7fj9POS+i6OlxZpHsWhYDikEOjkU="
     }
   },
   "cacheBootResources": true,
