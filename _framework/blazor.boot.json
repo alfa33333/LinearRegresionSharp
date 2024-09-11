@@ -1,7 +1,7 @@
 {
   "mainAssemblyName": "RegressionApp",
   "resources": {
-    "hash": "sha256-npK5ITl0Ef2E8QaZNijTCVCcSb+F97aGxte45cvE99E=",
+    "hash": "sha256-asetdxWyNoCCoMrnL2HeGmxLfmrdp8NL4iK7axfVRzQ=",
     "jsModuleNative": {
       "dotnet.native.8.0.8.unjkypn2lq.js": "sha256-d4XBaA9La97vwihucgJUVgdt0p3ia6ZBOqLV0o9BbGg="
     },
@@ -40,7 +40,7 @@
       "Microsoft.JSInterop.WebAssembly.wasm": "sha256-sLSiCKh0RQEV/2cl05tr7wOLWzExQfPZovvpqYLJduQ=",
       "Microsoft.ML.DataView.wasm": "sha256-8oxJCPwQsf53kHdF6tAv71JvuifQwpNRMtKwnRxN1AI=",
       "netstandard.wasm": "sha256-JtsXTfUd/eZl+03CZfC/gRtV5vJyJmsfB8KEVVpmGG0=",
-      "RegressionApp.wasm": "sha256-waSiKWJzzUf6dFdRlCWTzEgln6WkPdQmmnazEwvm1n4=",
+      "RegressionApp.wasm": "sha256-mMNNB6yBA9NuwnfAkcPUU4HYpOWib5LRUo4Dizp+EGQ=",
       "System.Buffers.wasm": "sha256-d665UCxfwHl/GoDgZr0BIhXhlxHSkJcIX/2jTHdyJs4=",
       "System.Collections.Concurrent.wasm": "sha256-Zv8icnGopGvpGYHYueFWIVyGoLupN5WiGiqr315rjRA=",
       "System.Collections.Immutable.wasm": "sha256-CgKW76BbEQEutuob0/8erJ7pFp4rhQPD6/3HKFM2U7c=",
